@@ -1,0 +1,10 @@
+#!/bin/sh
+# Local gate (team.md): the server CI reports but does not block merges, so lint and the fast
+# test suite must pass before any push.
+set -e
+
+echo "pre-push: npm run lint"
+npm run lint
+
+echo "pre-push: npm run test:unit"
+npm run test:unit

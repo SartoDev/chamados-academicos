@@ -1,0 +1,46 @@
+{
+  "stage": "functional-design",
+  "unit": "u4-reporting",
+  "upstream_ids": [
+    "AC5.1.1", "AC5.1.2", "AC5.1.3", "AC5.1.4",
+    "AC5.3.1", "AC5.3.2", "AC5.3.3", "AC5.3.4", "AC5.3.5", "AC5.3.6",
+    "AC5.4.1", "AC5.4.2", "AC5.4.3", "AC5.4.4",
+    "AC6.1.1", "AC6.1.2", "AC6.1.3", "AC6.1.4", "AC6.1.5",
+    "AC6.2.1", "AC6.2.2"
+  ],
+  "coverage": [
+    { "id": "AC5.1.1", "status": "OK", "target": "BR1.1" },
+    { "id": "AC5.1.2", "status": "OK", "target": "BR1.2" },
+    { "id": "AC5.1.3", "status": "N/A", "target": "realizado em U1: guard de negacao por padrao; as rotas novas de U4 declaram perfis" },
+    { "id": "AC5.1.4", "status": "N/A", "target": "realizado em U1: teste de enumeracao de rotas; as rotas novas de U4 passam por ele" },
+    { "id": "AC5.3.1", "status": "OK", "target": "BR7.6" },
+    { "id": "AC5.3.2", "status": "OK", "target": "BR7.6" },
+    { "id": "AC5.3.3", "status": "OK", "target": "BR7.6" },
+    { "id": "AC5.3.4", "status": "OK", "target": "BR7.4" },
+    { "id": "AC5.3.5", "status": "OK", "target": "BR7.6" },
+    { "id": "AC5.3.6", "status": "OK", "target": "BR7.6" },
+    { "id": "AC5.4.1", "status": "N/A", "target": "realizado em U2: telas do solicitante; o painel e tela de trabalho de Gestor e Administrador" },
+    { "id": "AC5.4.2", "status": "N/A", "target": "realizado em U2: listagem de chamados em cartoes" },
+    { "id": "AC5.4.3", "status": "N/A", "target": "realizado em U1: barra lateral recolhivel em menu" },
+    { "id": "AC5.4.4", "status": "OK", "target": "BR7.6" },
+    { "id": "AC6.1.1", "status": "OK", "target": "BR3.1, BR7.1" },
+    { "id": "AC6.1.2", "status": "OK", "target": "BR2.1, BR7.2" },
+    { "id": "AC6.1.3", "status": "OK", "target": "BR2.2, BR7.3" },
+    { "id": "AC6.1.4", "status": "OK", "target": "BR1.2" },
+    { "id": "AC6.1.5", "status": "OK", "target": "BR4.4" },
+    { "id": "AC6.2.1", "status": "OK", "target": "BR5.1" },
+    { "id": "AC6.2.2", "status": "OK", "target": "BR5.2" }
+  ],
+  "reverse": [
+    { "id": "BR1.3", "status": "N/A", "target": "decorre de BR2.2 de U2: Gestor sem setor nao enxerga chamado; nenhuma historia previa o caso" },
+    { "id": "BR3.2", "status": "N/A", "target": "invariante do calculo: cada chamado do recorte entra em exatamente um grupo" },
+    { "id": "BR3.3", "status": "N/A", "target": "rotulos de item desativado seguem FR3.7 e AC4.2.4, realizados em U1 e U2" },
+    { "id": "BR4.1", "status": "N/A", "target": "marco fixado na Q1, fechando o achado R-06 da revisao de requisitos; FR10.2 nao definia os marcos" },
+    { "id": "BR4.2", "status": "N/A", "target": "marco fixado na Q1 e na Q2; FR10.2 nao definia os marcos" },
+    { "id": "BR4.3", "status": "N/A", "target": "amostra e recorte fixados na Q2; nenhuma historia os definia" },
+    { "id": "BR6.1", "status": "N/A", "target": "regra de fronteira de ADR-005 e DB-01: unidade somente leitura, sem entidade" },
+    { "id": "BR6.2", "status": "N/A", "target": "extensao aditiva de SVC-05, adiada pelo desenho de U2 e implementada no Bolt de U4" },
+    { "id": "BR7.5", "status": "N/A", "target": "item de navegacao e abas decididos na Q4 e na Q5, a partir da Tela 9" },
+    { "id": "BR8.8", "status": "N/A", "target": "regra de U1 citada em BR3.3 de U4; nao e regra de U4" }
+  ]
+}

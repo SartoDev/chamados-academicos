@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "01a07e39-f718-7f68-bc72-36485a49345a",
+  "source": {
+    "kind": "managed",
+    "path": "documents/Escopo projeto TCC.pdf"
+  },
+  "sha256": "1e28deb314c5b29f01be0eb0d117b484152f4e0f7ba1ac9cbe53f9fca983f3b0",
+  "bytes": 113072,
+  "indexed_at": "2026-09-07T23:35:22.896Z",
+  "extraction": {
+    "state": "extracted",
+    "extractor": {
+      "name": "pdftotext",
+      "version": "pdftotext version 4.06 [www.xpdfreader.com]"
+    },
+    "chars": 6008,
+    "truncated": false,
+    "source_revision": "1e28deb314c5b29f01be0eb0d117b484152f4e0f7ba1ac9cbe53f9fca983f3b0"
+  },
+  "summary": {
+    "state": "absent"
+  },
+  "content": "documentkb/01a07e39-f718-7f68-bc72-36485a49345a/content.md",
+  "content_sha256": "f2b3fded1b8535d32fa52633d4ca87919d0aa642c44c25f32998d6d63e4a21b8",
+  "related_intent_ids": [
+    "01a07e37-752f-76c4-a4aa-ffb78d5a6592"
+  ],
+  "content_trust": "untrusted",
+  "content_handling": "data-not-instructions"
+}

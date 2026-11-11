@@ -1,0 +1,61 @@
+{
+  "stage": "code-generation",
+  "unit": "u4-reporting",
+  "version": 1,
+  "writes": [
+    { "path": "README.md" },
+    { "path": "docs/u4-reporting/rastreabilidade-requisitos-testes.md" },
+    { "path": "docs/u4-reporting/roteiro-inspecao-manual.md" },
+
+    { "path": "apps/api/jest.shared.ts" },
+    { "path": "apps/api/openapi.json" },
+    { "path": "apps/api/src/app.module.ts" },
+
+    { "path": "apps/api/src/tickets/tickets.types.ts" },
+    { "path": "apps/api/src/tickets/tickets.presenter.ts" },
+    { "path": "apps/api/src/tickets/tickets-public.service.ts" },
+
+    { "path": "apps/api/src/reporting/reporting.module.ts" },
+    { "path": "apps/api/src/reporting/reporting.controller.ts" },
+    { "path": "apps/api/src/reporting/reporting.service.ts" },
+    { "path": "apps/api/src/reporting/reporting.types.ts" },
+    { "path": "apps/api/src/reporting/dto/report-input.dto.ts" },
+    { "path": "apps/api/src/reporting/dto/report-response.dto.ts" },
+    { "path": "apps/api/src/reporting/rules/report-period.ts" },
+    { "path": "apps/api/src/reporting/rules/report-period.spec.ts" },
+    { "path": "apps/api/src/reporting/rules/report-access.ts" },
+    { "path": "apps/api/src/reporting/rules/report-access.spec.ts" },
+
+    { "path": "apps/api/test/integration/u4-reporting/support/factories.ts" },
+    { "path": "apps/api/test/integration/u4-reporting/support/report-scenario.ts" },
+    { "path": "apps/api/test/integration/u4-reporting/ticket-aggregations.spec.ts" },
+    { "path": "apps/api/test/integration/u4-reporting/reporting-service.spec.ts" },
+    { "path": "apps/api/test/integration/u4-reporting/api-reports.spec.ts" },
+
+    { "path": "apps/web/src/app/api/types.ts" },
+    { "path": "apps/web/src/app/navigation.ts" },
+    { "path": "apps/web/src/app/AppRoutes.tsx" },
+    { "path": "apps/web/src/app/rules.test.ts" },
+    { "path": "apps/web/src/app/layout/SideNav.test.tsx" },
+    { "path": "apps/web/src/test/report-fixtures.ts" },
+
+    { "path": "apps/web/src/features/reports/reports-api.ts" },
+    { "path": "apps/web/src/features/reports/report-period.ts" },
+    { "path": "apps/web/src/features/reports/report-period.test.ts" },
+    { "path": "apps/web/src/features/reports/indicators.ts" },
+    { "path": "apps/web/src/features/reports/ReportsPage.tsx" },
+    { "path": "apps/web/src/features/reports/ReportsPage.test.tsx" },
+    { "path": "apps/web/src/features/reports/PeriodSelector.tsx" },
+    { "path": "apps/web/src/features/reports/IndicatorsTab.tsx" },
+    { "path": "apps/web/src/features/reports/IndicatorsTab.test.tsx" },
+    { "path": "apps/web/src/features/reports/CountCard.tsx" },
+    { "path": "apps/web/src/features/reports/DurationCard.tsx" },
+    { "path": "apps/web/src/features/reports/DurationCard.test.tsx" },
+    { "path": "apps/web/src/features/reports/BarChartWithTable.tsx" },
+    { "path": "apps/web/src/features/reports/BarChartWithTable.test.tsx" },
+    { "path": "apps/web/src/features/reports/QueryTab.tsx" },
+    { "path": "apps/web/src/features/reports/QueryTab.test.tsx" },
+    { "path": "apps/web/src/features/reports/ReportFilters.tsx" },
+    { "path": "apps/web/src/features/reports/ReportTicketTable.tsx" }
+  ]
+}

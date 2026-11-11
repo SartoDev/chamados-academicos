@@ -1,0 +1,884 @@
+{
+  "stage": "code-generation",
+  "unit": "u2-tickets",
+  "upstream_ids": [
+    "AC1.2.1",
+    "AC1.2.2",
+    "AC1.2.3",
+    "AC1.2.4",
+    "AC1.2.5",
+    "AC1.2.6",
+    "AC1.3.1",
+    "AC1.3.2",
+    "AC1.3.3",
+    "AC1.3.4",
+    "AC1.3.5",
+    "AC1.3.6",
+    "AC1.3.7",
+    "AC1.3.8",
+    "AC1.5.1",
+    "AC1.5.2",
+    "AC1.5.3",
+    "AC1.5.4",
+    "AC1.5.5",
+    "AC1.5.6",
+    "AC1.6.1",
+    "AC1.6.2",
+    "AC1.6.3",
+    "AC1.6.4",
+    "AC1.6.5",
+    "AC1.6.6",
+    "AC1.6.7",
+    "AC2.1.1",
+    "AC2.1.2",
+    "AC2.1.3",
+    "AC2.1.4",
+    "AC2.1.5",
+    "AC2.1.6",
+    "AC2.1.7",
+    "AC2.2.1",
+    "AC2.2.2",
+    "AC2.2.3",
+    "AC2.2.4",
+    "AC2.2.5",
+    "AC2.3.1",
+    "AC2.3.2",
+    "AC2.3.3",
+    "AC2.3.4",
+    "AC2.3.5",
+    "AC2.3.6",
+    "AC2.4.1",
+    "AC2.4.2",
+    "AC2.4.3",
+    "AC2.4.4",
+    "AC2.4.5",
+    "AC2.4.6",
+    "AC2.4.7",
+    "AC3.1.1",
+    "AC3.1.2",
+    "AC3.1.3",
+    "AC3.1.4",
+    "AC3.1.5",
+    "AC4.1.1",
+    "AC4.1.2",
+    "AC4.1.3",
+    "AC4.1.4",
+    "AC4.1.5",
+    "AC4.1.6",
+    "AC4.1.7",
+    "AC4.1.8",
+    "AC4.1.9",
+    "AC4.2.1",
+    "AC4.2.2",
+    "AC4.2.3",
+    "AC4.2.4",
+    "AC4.2.5",
+    "AC4.2.6",
+    "AC5.1.1",
+    "AC5.1.2",
+    "AC5.1.3",
+    "AC5.1.4",
+    "AC5.2.1",
+    "AC5.2.2",
+    "AC5.3.1",
+    "AC5.3.2",
+    "AC5.3.3",
+    "AC5.3.4",
+    "AC5.3.5",
+    "AC5.3.6",
+    "AC5.4.1",
+    "AC5.4.2",
+    "AC5.4.3",
+    "AC5.4.4",
+    "BR1.1",
+    "BR1.2",
+    "BR1.3",
+    "BR1.4",
+    "BR1.5",
+    "BR1.6",
+    "BR2.1",
+    "BR2.2",
+    "BR2.3",
+    "BR2.4",
+    "BR2.5",
+    "BR2.6",
+    "BR2.7",
+    "BR2.8",
+    "BR2.9",
+    "BR3.1",
+    "BR3.2",
+    "BR3.3",
+    "BR3.4",
+    "BR3.5",
+    "BR3.6",
+    "BR3.7",
+    "BR3.8",
+    "BR3.9",
+    "BR4.1",
+    "BR4.2",
+    "BR4.3",
+    "BR4.4",
+    "BR5.1",
+    "BR5.2",
+    "BR5.3",
+    "BR6.1",
+    "BR6.2",
+    "BR6.3",
+    "BR6.4",
+    "BR6.5",
+    "BR6.6",
+    "BR7.1",
+    "BR7.2",
+    "BR7.3",
+    "BR7.4",
+    "BR8.1",
+    "BR8.2",
+    "BR8.3",
+    "BR8.4",
+    "BR8.5",
+    "BR8.6",
+    "BR9.1",
+    "BR9.2",
+    "BR9.3",
+    "BR9.4",
+    "BR9.5",
+    "BR9.6",
+    "BR9.7",
+    "BR9.8",
+    "BR9.9",
+    "BR3.10",
+    "BR8.8"
+  ],
+  "coverage": [
+    {
+      "id": "AC1.2.1",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/NewTicketForm.test.tsx"
+    },
+    {
+      "id": "AC1.2.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.2.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.2.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-tickets.spec.ts"
+    },
+    {
+      "id": "AC1.2.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-tickets.spec.ts"
+    },
+    {
+      "id": "AC1.2.6",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.3.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC1.3.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC1.3.3",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/MyTicketsPage.test.tsx"
+    },
+    {
+      "id": "AC1.3.4",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/TicketDetailPage.test.tsx"
+    },
+    {
+      "id": "AC1.3.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC1.3.6",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.3.7",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC1.3.8",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/MyTicketsPage.test.tsx"
+    },
+    {
+      "id": "AC1.5.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.5.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "AC1.5.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "AC1.5.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "AC1.5.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "AC1.5.6",
+      "status": "OK",
+      "target": "apps/api/src/notifications/rules/notification-recipients.spec.ts"
+    },
+    {
+      "id": "AC1.6.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.6.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/reopen-window.spec.ts"
+    },
+    {
+      "id": "AC1.6.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.6.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.6.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC1.6.6",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC1.6.7",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.1.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC2.1.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC2.1.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.1.4",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-visibility.spec.ts"
+    },
+    {
+      "id": "AC2.1.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC2.1.6",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/SectorQueuePage.test.tsx"
+    },
+    {
+      "id": "AC2.1.7",
+      "status": "Deferred",
+      "target": "realizado em U3: o recurso de mensagens e sua regra de acesso pertencem a Conversation; U2 fornece a visibilidade do chamado por BR8.1"
+    },
+    {
+      "id": "AC2.2.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.2.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC2.2.3",
+      "status": "Deferred",
+      "target": "realizado em U3: envio de mensagem pelo responsavel e notificacao de mensagem recebida"
+    },
+    {
+      "id": "AC2.2.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.2.5",
+      "status": "Deferred",
+      "target": "realizado em U3: recusa de mensagem em chamado encerrado"
+    },
+    {
+      "id": "AC2.3.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.3.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "AC2.3.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.3.4",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC2.3.5",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-transitions.spec.ts"
+    },
+    {
+      "id": "AC2.3.6",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.4.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.4.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC2.4.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-tickets.spec.ts"
+    },
+    {
+      "id": "AC2.4.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.4.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC2.4.6",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC2.4.7",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/data-model.spec.ts"
+    },
+    {
+      "id": "AC3.1.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC3.1.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC3.1.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC3.1.4",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "AC3.1.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC4.1.1",
+      "status": "N/A",
+      "target": "realizado em U1: criacao de usuario"
+    },
+    {
+      "id": "AC4.1.2",
+      "status": "N/A",
+      "target": "realizado em U1: e-mail duplicado"
+    },
+    {
+      "id": "AC4.1.3",
+      "status": "N/A",
+      "target": "realizado em U1: troca de perfil"
+    },
+    {
+      "id": "AC4.1.4",
+      "status": "N/A",
+      "target": "realizado em U1: redefinicao de senha"
+    },
+    {
+      "id": "AC4.1.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC4.1.6",
+      "status": "N/A",
+      "target": "realizado em U1: setor obrigatorio para Atendente e Gestor"
+    },
+    {
+      "id": "AC4.1.7",
+      "status": "N/A",
+      "target": "realizado em U1: gestao de usuarios so para administrador"
+    },
+    {
+      "id": "AC4.1.8",
+      "status": "N/A",
+      "target": "realizado em U1: sem rota publica de criacao de conta"
+    },
+    {
+      "id": "AC4.1.9",
+      "status": "N/A",
+      "target": "realizado em U1: cinco perfis"
+    },
+    {
+      "id": "AC4.2.1",
+      "status": "N/A",
+      "target": "realizado em U1: criacao de setor"
+    },
+    {
+      "id": "AC4.2.2",
+      "status": "N/A",
+      "target": "realizado em U1: categoria sem setor"
+    },
+    {
+      "id": "AC4.2.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "AC4.2.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC4.2.5",
+      "status": "N/A",
+      "target": "realizado em U1: carga inicial de status e prioridades"
+    },
+    {
+      "id": "AC4.2.6",
+      "status": "N/A",
+      "target": "realizado em U1: confirmacao de desativacao"
+    },
+    {
+      "id": "AC5.1.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-authorization.spec.ts"
+    },
+    {
+      "id": "AC5.1.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-tickets.spec.ts"
+    },
+    {
+      "id": "AC5.1.3",
+      "status": "N/A",
+      "target": "realizado em U1: guard de negacao por padrao; as rotas novas de U2 declaram perfis"
+    },
+    {
+      "id": "AC5.1.4",
+      "status": "N/A",
+      "target": "realizado em U1: teste de enumeracao de rotas; as rotas novas de U2 passam por ele"
+    },
+    {
+      "id": "AC5.2.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC5.2.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "AC5.3.1",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/SectorQueuePage.test.tsx"
+    },
+    {
+      "id": "AC5.3.2",
+      "status": "OK",
+      "target": "docs/u2-tickets/roteiro-inspecao-manual.md"
+    },
+    {
+      "id": "AC5.3.3",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/NewTicketForm.test.tsx"
+    },
+    {
+      "id": "AC5.3.4",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/TicketDetailPage.test.tsx"
+    },
+    {
+      "id": "AC5.3.5",
+      "status": "OK",
+      "target": "docs/u2-tickets/roteiro-inspecao-manual.md"
+    },
+    {
+      "id": "AC5.3.6",
+      "status": "OK",
+      "target": "docs/u2-tickets/roteiro-inspecao-manual.md"
+    },
+    {
+      "id": "AC5.4.1",
+      "status": "OK",
+      "target": "docs/u2-tickets/roteiro-inspecao-manual.md"
+    },
+    {
+      "id": "AC5.4.2",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/MyTicketsPage.test.tsx"
+    },
+    {
+      "id": "AC5.4.3",
+      "status": "N/A",
+      "target": "realizado em U1: barra lateral recolhivel em menu"
+    },
+    {
+      "id": "AC5.4.4",
+      "status": "OK",
+      "target": "docs/u2-tickets/roteiro-inspecao-manual.md"
+    },
+    {
+      "id": "BR1.1",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR1.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/data-model.spec.ts"
+    },
+    {
+      "id": "BR1.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "BR1.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "BR1.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "BR1.6",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-reference.spec.ts"
+    },
+    {
+      "id": "BR2.1",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-visibility.spec.ts"
+    },
+    {
+      "id": "BR2.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-visibility.spec.ts"
+    },
+    {
+      "id": "BR2.3",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR2.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR2.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR2.6",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-visibility.spec.ts"
+    },
+    {
+      "id": "BR2.7",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR2.8",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR2.9",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-visibility.spec.ts"
+    },
+    {
+      "id": "BR3.1",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.2",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.3",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.4",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.5",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.6",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.7",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.8",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-action-policy.spec.ts"
+    },
+    {
+      "id": "BR3.9",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/assignee-availability.spec.ts"
+    },
+    {
+      "id": "BR4.1",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-transitions.spec.ts"
+    },
+    {
+      "id": "BR4.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-lifecycle.spec.ts"
+    },
+    {
+      "id": "BR4.3",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/reopen-window.spec.ts"
+    },
+    {
+      "id": "BR4.4",
+      "status": "OK",
+      "target": "apps/api/src/tickets/rules/ticket-transitions.spec.ts"
+    },
+    {
+      "id": "BR5.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/data-model.spec.ts"
+    },
+    {
+      "id": "BR5.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/data-model.spec.ts"
+    },
+    {
+      "id": "BR5.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR6.1",
+      "status": "OK",
+      "target": "apps/api/src/notifications/rules/notification-recipients.spec.ts"
+    },
+    {
+      "id": "BR6.2",
+      "status": "OK",
+      "target": "apps/api/src/notifications/rules/notification-recipients.spec.ts"
+    },
+    {
+      "id": "BR6.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/transaction-runner.spec.ts"
+    },
+    {
+      "id": "BR6.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "BR6.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/api-notifications.spec.ts"
+    },
+    {
+      "id": "BR6.6",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/notifications.spec.ts"
+    },
+    {
+      "id": "BR7.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/transaction-runner.spec.ts"
+    },
+    {
+      "id": "BR7.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-concurrency.spec.ts"
+    },
+    {
+      "id": "BR7.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-concurrency.spec.ts"
+    },
+    {
+      "id": "BR7.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/data-model.spec.ts"
+    },
+    {
+      "id": "BR8.1",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "BR8.2",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "BR8.3",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "BR8.4",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "BR8.5",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/ticket-listing.spec.ts"
+    },
+    {
+      "id": "BR8.6",
+      "status": "OK",
+      "target": "apps/api/test/integration/u2-tickets/public-services.spec.ts"
+    },
+    {
+      "id": "BR9.1",
+      "status": "OK",
+      "target": "apps/web/src/app/rules.test.ts"
+    },
+    {
+      "id": "BR9.2",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/MyTicketsPage.test.tsx"
+    },
+    {
+      "id": "BR9.3",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/NewTicketForm.test.tsx"
+    },
+    {
+      "id": "BR9.4",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/ticket-rules.test.ts"
+    },
+    {
+      "id": "BR9.5",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/SectorQueuePage.test.tsx"
+    },
+    {
+      "id": "BR9.6",
+      "status": "OK",
+      "target": "apps/web/src/features/notifications/NotificationBell.test.tsx"
+    },
+    {
+      "id": "BR9.7",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/dialogs/ticket-dialogs.test.tsx"
+    },
+    {
+      "id": "BR9.8",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/MyTicketsPage.test.tsx"
+    },
+    {
+      "id": "BR9.9",
+      "status": "OK",
+      "target": "apps/web/src/features/tickets/TicketDetailPage.test.tsx"
+    },
+    {
+      "id": "BR3.10",
+      "status": "N/A",
+      "target": "regra de U1 citada como origem de BR3.9 de U2; verificada pelos testes de U1"
+    },
+    {
+      "id": "BR8.8",
+      "status": "N/A",
+      "target": "regra de U1 citada como origem de BR5.3 de U2; verificada pelos testes de U1"
+    }
+  ]
+}

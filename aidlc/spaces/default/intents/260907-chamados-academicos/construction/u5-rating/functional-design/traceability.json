@@ -1,0 +1,46 @@
+{
+  "stage": "functional-design",
+  "unit": "u5-rating",
+  "upstream_ids": [
+    "AC5.1.1", "AC5.1.2", "AC5.1.3", "AC5.1.4",
+    "AC5.2.1", "AC5.2.2",
+    "AC5.3.1", "AC5.3.2", "AC5.3.3", "AC5.3.4", "AC5.3.5", "AC5.3.6",
+    "AC5.4.1", "AC5.4.2", "AC5.4.3", "AC5.4.4",
+    "AC6.3.1", "AC6.3.2", "AC6.3.3"
+  ],
+  "coverage": [
+    { "id": "AC5.1.1", "status": "OK", "target": "BR1.1, BR3.1" },
+    { "id": "AC5.1.2", "status": "OK", "target": "BR1.1, BR1.3" },
+    { "id": "AC5.1.3", "status": "N/A", "target": "realizado em U1: guard de negacao por padrao; as rotas novas de U5 declaram perfis" },
+    { "id": "AC5.1.4", "status": "N/A", "target": "realizado em U1: teste de enumeracao de rotas; as rotas novas de U5 passam por ele" },
+    { "id": "AC5.2.1", "status": "OK", "target": "BR1.3" },
+    { "id": "AC5.2.2", "status": "OK", "target": "BR1.1, BR1.3" },
+    { "id": "AC5.3.1", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.3.2", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.3.3", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.3.4", "status": "OK", "target": "BR5.2, BR5.5" },
+    { "id": "AC5.3.5", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.3.6", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.4.1", "status": "OK", "target": "BR5.5" },
+    { "id": "AC5.4.2", "status": "N/A", "target": "realizado em U2: listagem de chamados em cartoes" },
+    { "id": "AC5.4.3", "status": "N/A", "target": "realizado em U1: barra lateral recolhivel em menu" },
+    { "id": "AC5.4.4", "status": "N/A", "target": "realizado em U2 e U4: rolagem contida nas tabelas de trabalho; U5 nao acrescenta tabela" },
+    { "id": "AC6.3.1", "status": "OK", "target": "BR1.1, BR1.2, BR5.1" },
+    { "id": "AC6.3.2", "status": "OK", "target": "BR1.4" },
+    { "id": "AC6.3.3", "status": "OK", "target": "BR3.1, BR5.4" }
+  ],
+  "reverse": [
+    { "id": "BR4.3", "status": "N/A", "target": "regra de U2 citada em BR2.4 de U5 (reabertura em ate 72 horas); nao e regra de U5" },
+    { "id": "BR7.1", "status": "N/A", "target": "regra de U4 citada em BR5.4 de U5 (cartoes do painel); nao e regra de U5" },
+    { "id": "BR2.1", "status": "N/A", "target": "escala fixada na Q1; FR12.1 nao definia a escala da nota" },
+    { "id": "BR2.2", "status": "N/A", "target": "comentario e seu limite fixados na Q3; o contrato trazia o campo sem regra" },
+    { "id": "BR2.3", "status": "N/A", "target": "unicidade e imutabilidade fixadas na Q2; o contrato deixava a substituicao em aberto" },
+    { "id": "BR2.4", "status": "N/A", "target": "efeito da reabertura sobre a avaliacao decidido na Q2; nenhuma historia o previa" },
+    { "id": "BR3.2", "status": "N/A", "target": "estado vazio do cartao, herdado de BR2.2 de U4 e de AC6.1.3" },
+    { "id": "BR3.3", "status": "N/A", "target": "comentario fora do painel decidido na Q3 e na Q5" },
+    { "id": "BR4.1", "status": "N/A", "target": "regra de extensao aditiva de SVC-07 e SVC-08, e fronteira de ADR-005 e DB-01" },
+    { "id": "BR4.2", "status": "N/A", "target": "FR7 nao lista avaliacao entre os eventos notificaveis" },
+    { "id": "BR5.3", "status": "N/A", "target": "aviso de que a avaliacao e definitiva, decorrente da Q2 e dos criterios transversais CT7 e CT8" },
+    { "id": "BR5.6", "status": "N/A", "target": "criterio transversal CT11: mensagem exibida vem da traducao do codigo de erro" }
+  ]
+}

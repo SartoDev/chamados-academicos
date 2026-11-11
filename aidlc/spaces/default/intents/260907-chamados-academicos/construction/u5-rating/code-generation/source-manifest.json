@@ -1,0 +1,66 @@
+{
+  "stage": "code-generation",
+  "unit": "u5-rating",
+  "version": 1,
+  "writes": [
+    { "path": "README.md" },
+    { "path": "docs/u5-rating/rastreabilidade-requisitos-testes.md" },
+    { "path": "docs/u5-rating/roteiro-inspecao-manual.md" },
+
+    { "path": "apps/api/openapi.json" },
+    { "path": "apps/api/prisma/schema.prisma" },
+    { "path": "apps/api/prisma/migrations/20260926220811_u5_rating/migration.sql" },
+
+    { "path": "apps/api/src/common/errors/error-codes.ts" },
+
+    { "path": "apps/api/src/tickets/tickets.module.ts" },
+    { "path": "apps/api/src/tickets/rating.controller.ts" },
+    { "path": "apps/api/src/tickets/rating.service.ts" },
+    { "path": "apps/api/src/tickets/rating.types.ts" },
+    { "path": "apps/api/src/tickets/rating.errors.ts" },
+    { "path": "apps/api/src/tickets/dto/rating-input.dto.ts" },
+    { "path": "apps/api/src/tickets/dto/rating-response.dto.ts" },
+    { "path": "apps/api/src/tickets/rules/rating-access.ts" },
+    { "path": "apps/api/src/tickets/rules/rating-access.spec.ts" },
+    { "path": "apps/api/src/tickets/rules/rating-score.ts" },
+    { "path": "apps/api/src/tickets/rules/rating-score.spec.ts" },
+
+    { "path": "apps/api/src/reporting/reporting.controller.ts" },
+    { "path": "apps/api/src/reporting/reporting.service.ts" },
+    { "path": "apps/api/src/reporting/reporting.types.ts" },
+    { "path": "apps/api/src/reporting/dto/report-response.dto.ts" },
+    { "path": "apps/api/src/reporting/rules/report-access.ts" },
+    { "path": "apps/api/src/reporting/rules/report-access.spec.ts" },
+
+    { "path": "apps/api/test/integration/u1-foundation/support/database.ts" },
+    { "path": "apps/api/test/integration/u5-rating/support/factories.ts" },
+    { "path": "apps/api/test/integration/u5-rating/support/rating-scenario.ts" },
+    { "path": "apps/api/test/integration/u5-rating/data-model.spec.ts" },
+    { "path": "apps/api/test/integration/u5-rating/rating-service.spec.ts" },
+    { "path": "apps/api/test/integration/u5-rating/api-rating.spec.ts" },
+
+    { "path": "apps/web/src/app/api/types.ts" },
+    { "path": "apps/web/src/app/i18n/error-code-messages.ts" },
+    { "path": "apps/web/src/test/ticket-fixtures.ts" },
+    { "path": "apps/web/src/test/report-fixtures.ts" },
+
+    { "path": "apps/web/src/features/rating/rating-api.ts" },
+    { "path": "apps/web/src/features/rating/rating-labels.ts" },
+    { "path": "apps/web/src/features/rating/RatingSection.tsx" },
+    { "path": "apps/web/src/features/rating/RatingSection.test.tsx" },
+    { "path": "apps/web/src/features/rating/RatingForm.tsx" },
+    { "path": "apps/web/src/features/rating/RatingForm.test.tsx" },
+    { "path": "apps/web/src/features/rating/ScoreChoice.tsx" },
+    { "path": "apps/web/src/features/rating/ConfirmRatingDialog.tsx" },
+    { "path": "apps/web/src/features/rating/RatingSummaryView.tsx" },
+    { "path": "apps/web/src/features/rating/RatingSummaryView.test.tsx" },
+    { "path": "apps/web/src/features/rating/RatingCard.tsx" },
+    { "path": "apps/web/src/features/rating/RatingCard.test.tsx" },
+    { "path": "apps/web/src/features/rating/extension-points.test.tsx" },
+
+    { "path": "apps/web/src/features/tickets/TicketTabs.tsx" },
+    { "path": "apps/web/src/features/tickets/TicketDetailPage.tsx" },
+    { "path": "apps/web/src/features/reports/IndicatorsTab.tsx" },
+    { "path": "apps/web/src/features/reports/IndicatorsTab.test.tsx" }
+  ]
+}

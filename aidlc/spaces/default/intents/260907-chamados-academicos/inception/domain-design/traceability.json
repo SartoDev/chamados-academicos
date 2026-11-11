@@ -1,0 +1,52 @@
+{
+  "stage": "domain-design",
+  "upstream_ids": [
+    "US1.1", "US1.2", "US1.3", "US1.4", "US1.5", "US1.6",
+    "US2.1", "US2.2", "US2.3", "US2.4",
+    "US3.1",
+    "US4.1", "US4.2",
+    "US5.1", "US5.2", "US5.3", "US5.4",
+    "US6.1", "US6.2", "US6.3"
+  ],
+  "coverage": [
+    { "id": "US1.1", "status": "OK", "target": "Auth" },
+    { "id": "US1.2", "status": "OK", "target": "Tickets" },
+    { "id": "US1.3", "status": "OK", "target": "Tickets" },
+    { "id": "US1.4", "status": "OK", "target": "Conversation" },
+    { "id": "US1.5", "status": "OK", "target": "Notifications" },
+    { "id": "US1.6", "status": "OK", "target": "Tickets" },
+    { "id": "US2.1", "status": "OK", "target": "Tickets" },
+    { "id": "US2.2", "status": "OK", "target": "Tickets" },
+    { "id": "US2.3", "status": "OK", "target": "Tickets" },
+    { "id": "US2.4", "status": "OK", "target": "Tickets" },
+    { "id": "US3.1", "status": "OK", "target": "Tickets" },
+    { "id": "US4.1", "status": "OK", "target": "Users" },
+    { "id": "US4.2", "status": "OK", "target": "Catalog" },
+    { "id": "US5.1", "status": "OK", "target": "Auth" },
+    { "id": "US5.2", "status": "OK", "target": "Tickets" },
+    { "id": "US5.3", "status": "Deferred", "target": "refined-mockups nao esta no plano; acessibilidade por teclado e verificada por inspecao manual e nao se realiza em nenhum bloco de backend" },
+    { "id": "US5.4", "status": "Deferred", "target": "o catalogo cobre apenas o backend por decisao ADR-007; comportamento responsivo nao se realiza em bloco de backend" },
+    { "id": "US6.1", "status": "OK", "target": "Reporting" },
+    { "id": "US6.2", "status": "OK", "target": "Reporting" },
+    { "id": "US6.3", "status": "OK", "target": "Tickets" }
+  ],
+  "reverse": [
+    { "id": "Auth", "status": "OK", "target": "US1.1, US5.1" },
+    { "id": "Users", "status": "OK", "target": "US4.1" },
+    { "id": "Catalog", "status": "OK", "target": "US4.2" },
+    { "id": "Tickets", "status": "OK", "target": "US1.2, US1.3, US1.6, US2.1, US2.2, US2.3, US2.4, US3.1, US5.2, US6.3" },
+    { "id": "Conversation", "status": "OK", "target": "US1.4" },
+    { "id": "Notifications", "status": "OK", "target": "US1.5" },
+    { "id": "Reporting", "status": "OK", "target": "US6.1, US6.2" },
+    { "id": "User", "status": "OK", "target": "US4.1" },
+    { "id": "Sector", "status": "OK", "target": "US4.2" },
+    { "id": "Category", "status": "OK", "target": "US4.2, US1.2" },
+    { "id": "Status", "status": "OK", "target": "US4.2, US2.3" },
+    { "id": "Priority", "status": "OK", "target": "US4.2, US2.3" },
+    { "id": "Ticket", "status": "OK", "target": "US1.2, US1.3, US2.1" },
+    { "id": "TicketHistoryEntry", "status": "OK", "target": "US1.3, US2.3" },
+    { "id": "TicketSectorPassage", "status": "OK", "target": "US2.1, US2.4" },
+    { "id": "Message", "status": "OK", "target": "US1.4" },
+    { "id": "Notification", "status": "OK", "target": "US1.5" }
+  ]
+}

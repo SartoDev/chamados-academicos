@@ -1,0 +1,58 @@
+{
+  "stage": "code-generation",
+  "unit": "u3-conversation",
+  "version": 1,
+  "writes": [
+    { "path": "README.md" },
+    { "path": "docs/u3-conversation/rastreabilidade-requisitos-testes.md" },
+    { "path": "docs/u3-conversation/roteiro-inspecao-manual.md" },
+
+    { "path": "apps/api/jest.shared.ts" },
+    { "path": "apps/api/openapi.json" },
+    { "path": "apps/api/prisma/schema.prisma" },
+    { "path": "apps/api/prisma/migrations/20260923034400_u3_conversation/migration.sql" },
+
+    { "path": "apps/api/src/app.module.ts" },
+    { "path": "apps/api/src/common/errors/error-codes.ts" },
+
+    { "path": "apps/api/src/conversation/conversation.module.ts" },
+    { "path": "apps/api/src/conversation/conversation.controller.ts" },
+    { "path": "apps/api/src/conversation/conversation.service.ts" },
+    { "path": "apps/api/src/conversation/conversation.types.ts" },
+    { "path": "apps/api/src/conversation/conversation.errors.ts" },
+    { "path": "apps/api/src/conversation/conversation-boundary.spec.ts" },
+    { "path": "apps/api/src/conversation/dto/message-input.dto.ts" },
+    { "path": "apps/api/src/conversation/dto/message-response.dto.ts" },
+    { "path": "apps/api/src/conversation/rules/conversation-access.ts" },
+    { "path": "apps/api/src/conversation/rules/conversation-access.spec.ts" },
+    { "path": "apps/api/src/conversation/rules/message-recipients.ts" },
+    { "path": "apps/api/src/conversation/rules/message-recipients.spec.ts" },
+
+    { "path": "apps/api/test/integration/u1-foundation/support/database.ts" },
+    { "path": "apps/api/test/integration/u3-conversation/support/factories.ts" },
+    { "path": "apps/api/test/integration/u3-conversation/data-model.spec.ts" },
+    { "path": "apps/api/test/integration/u3-conversation/conversation-service.spec.ts" },
+    { "path": "apps/api/test/integration/u3-conversation/api-messages.spec.ts" },
+
+    { "path": "apps/web/src/app/api/types.ts" },
+    { "path": "apps/web/src/app/i18n/error-code-messages.ts" },
+    { "path": "apps/web/src/features/tickets/TicketDetailPage.tsx" },
+    { "path": "apps/web/src/test/message-fixtures.ts" },
+
+    { "path": "apps/web/src/features/conversation/conversation-api.ts" },
+    { "path": "apps/web/src/features/conversation/conversation-rules.ts" },
+    { "path": "apps/web/src/features/conversation/conversation-rules.test.ts" },
+    { "path": "apps/web/src/features/conversation/message-schema.ts" },
+    { "path": "apps/web/src/features/conversation/use-conversation-tab.tsx" },
+    { "path": "apps/web/src/features/conversation/ConversationTab.tsx" },
+    { "path": "apps/web/src/features/conversation/ConversationTab.test.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageList.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageList.test.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageBubble.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageBubble.test.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageComposer.tsx" },
+    { "path": "apps/web/src/features/conversation/MessageComposer.test.tsx" },
+    { "path": "apps/web/src/features/conversation/LoadPreviousButton.tsx" },
+    { "path": "apps/web/src/features/conversation/ConversationRefreshButton.tsx" }
+  ]
+}

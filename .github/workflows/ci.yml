@@ -1,0 +1,112 @@
+name: CI
+
+# The server pipeline reports; it does not block merges. `main` has no branch
+# protection by an affirmed decision, and the real gate is the local pre-push
+# hook (lint plus the fast suite). A red run here is an auditable record, not a
+# merge barrier.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api:
+    name: api
+    runs-on: ubuntu-latest
+
+    # The integration suite runs against a real Postgres, never a Prisma mock,
+    # and applies the migrations itself from its global setup.
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: app_test
+          POSTGRES_PASSWORD: app_test
+          POSTGRES_DB: chamados_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U app_test -d chamados_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+
+    env:
+      DATABASE_URL_TEST: postgresql://app_test:app_test@127.0.0.1:5432/chamados_test
+
+    steps:
+      # Full history: the secret scan needs every commit, not just the tip.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Repository-wide gates live in this job so they run once per workflow.
+      - name: Lint
+        run: npm run lint
+
+      - name: Formatting
+        run: npm run format:check
+
+      - name: Types (api)
+        run: npm run typecheck -w apps/api
+
+      # The versioned contract must match the code that generates it.
+      - name: OpenAPI contract
+        run: npm run openapi:check -w apps/api
+
+      # Unit plus integration in one run, with the coverage thresholds of
+      # jest.shared.ts: global lines, guards, domain rules and services.
+      - name: Tests and coverage (api)
+        run: npm run test:coverage -w apps/api
+
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Dependency audit (production, blocking)
+        run: npm audit --omit=dev --audit-level=high
+
+      # Development dependencies are reported, never blocking: an advisory in a
+      # build-time tool does not reach the running system.
+      - name: Dependency audit (full, report only)
+        run: npm audit
+        continue-on-error: true
+
+  web:
+    name: web
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Types (web)
+        run: npm run typecheck -w apps/web
+
+      - name: Build
+        run: npm run build -w apps/web
+
+      - name: Tests and coverage (web)
+        run: npm run test:coverage -w apps/web
