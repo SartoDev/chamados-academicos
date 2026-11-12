@@ -8,3 +8,6 @@ aidlc
 apps/api/openapi.json
 apps/api/prisma/migrations
 apps/api/src/generated
+
+# Recorded session transcript, committed as-is
+20261112-030851-50d605.json
