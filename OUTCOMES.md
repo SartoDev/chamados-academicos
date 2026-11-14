@@ -141,13 +141,14 @@ A API aplica as migrações na subida; não há passo manual. O web responde em 
 
 ### Última verificação completa
 
-| Verificação             | Resultado                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------- |
-| Jest, portão combinado  | 58 suítes, 766 testes, 766 aprovados, 0 falhas                                  |
-| Vitest                  | 340 testes, 340 aprovados, 0 falhas                                             |
-| Cobertura               | 96,71% de linhas na API; 96,33% no web                                          |
-| Cobertura por requisito | 110 de 110 critérios, 58 de 58 requisitos folha                                 |
-| Estáticas               | lint, tipos estritos, formato, contrato OpenAPI, auditoria de produção — limpos |
+| Verificação             | Resultado                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------- |
+| Jest, portão combinado  | 58 suítes, 766 testes, 766 aprovados, 0 falhas                                     |
+| Vitest                  | 340 testes, 340 aprovados, 0 falhas                                                |
+| Cobertura               | 96,71% de linhas na API; 96,33% no web                                             |
+| Cobertura por requisito | 110 de 110 critérios, 58 de 58 requisitos folha                                    |
+| Estáticas               | lint, tipos estritos, formato, contrato OpenAPI, auditoria de produção — limpos    |
+| Inspeção manual         | 126 de 144 itens executados em 13/11/2026; NFR6 atendido, NFR5 reprovado em §2.4.3 |
 
 ## 5. Decisões de arquitetura e restrições
 
@@ -208,9 +209,44 @@ Nota de leitura honesta: `aidlc/spaces/default/memory/project.md` carrega **22 l
 
 ### Pendente de ação humana
 
-1. **Executar os cinco roteiros de inspeção manual** (`docs/u*/roteiro-inspecao-manual.md`). Enquanto não forem executados, NFR5 (WCAG 2.1 nível A) e NFR6 (sem rolagem horizontal em 375px) permanecem não verificados.
+1. **Decidir o que fazer com os três achados de acessibilidade** da inspeção manual, executada em 13/11/2026 (ver § Achados da inspeção manual, adiante). O primeiro deles reprova o NFR5.
 2. **Habilitar o CodeQL em configuração padrão** na interface do GitHub. É configuração de conta, não arquivo do repositório, e nenhum passo do pipeline detecta a ausência.
 3. **Primeira execução real do pipeline**, no primeiro push. O YAML foi validado e cada comando foi executado localmente na forma exata, exceto a ação do `gitleaks`, que só roda no runner.
+
+### Achados da inspeção manual (13/11/2026)
+
+Os cinco roteiros de `docs/u*/roteiro-inspecao-manual.md` foram executados em inspeção
+assistida por agente no navegador do autor, com observação simultânea e evidência medida em
+cada linha. Foram **126 itens de 144**; os 18 restantes, de "Conferência do comportamento
+(US6.3)", foram deliberadamente pulados por terem cobertura automatizada (AC6.3.x), e estão
+marcados como `Não executado` no roteiro, com a razão.
+
+Resultado: **116 aprovados, 4 aprovados com divergência de roteiro e 6 reprovados**. As seis
+reprovações correspondem a **três defeitos**:
+
+| Achado                                                                                                                                                                                                                 | Onde                                                                                   | Severidade                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **O foco não é reestabelecido quando o controle focado deixa de ser focável** — por sair do DOM (ação que o invalida, linha que sai da lista, painel de abas que remonta) ou por ser desabilitado durante a requisição | Área administrativa inteira, "Assumir" na Fila do Setor, envio de mensagem na Conversa | **WCAG 2.1 §2.4.3, nível A — reprova o NFR5** |
+| **Contraste de 4,35** na linha de autor e momento dentro do balão: `rgb(115,115,115)` sobre `rgb(245,245,245)` a 12px. A mesma cor sobre branco dá 4,74 e passa. É um par de tokens, não 28 defeitos                   | Aba Conversa, 28 elementos                                                             | SC 1.4.3, nível **AA**                        |
+| **Contraste de 3,97** no botão "Desativar"                                                                                                                                                                             | Administração                                                                          | SC 1.4.3, nível **AA**                        |
+
+Observação de localização, fora da contagem acima: o nome acessível do botão de fechar é
+`Close`, em inglês, numa página declarada `lang="pt-BR"`. São duas ocorrências, em
+`apps/web/src/components/ui/dialog.tsx:64` e `sheet.tsx:67` — padrão do shadcn deixado sem
+traduzir, contra a regra afirmada em `team.md` § Code Style.
+
+**Situação dos dois requisitos:**
+
+- **NFR6** (nenhuma tela exige rolagem horizontal em 375px): **atendido**. Os 27 itens de
+  largura passaram, com o viewport conferido antes de cada medida.
+- **NFR5** (WCAG 2.1 nível A): **não atendido**, pelo achado de foco. Os demais aspectos do
+  nível A verificados — navegação por teclado, rótulos visíveis, identificação de erro,
+  informação não transmitida só por cor — passaram.
+
+As quatro divergências de roteiro são todas a favor da implementação: o roteiro previa tabela
+com rolagem onde a tela usa cartões (U2 4.6, U4 1.6), previa a aba Conversa ser retirada onde o
+sistema devolve 404 no chamado inteiro (U3 1.6), e previa um botão "Tentar novamente" onde o
+formulário preservado cumpre o mesmo papel (U5 2.4).
 
 ### Dívida técnica identificada e não resolvida
 
